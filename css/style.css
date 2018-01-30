@@ -48,7 +48,7 @@ header {
   margin-top: 0px;
   padding-top: 0px;
   border-bottom: 2px solid black;
-  width:90%;
+  width:100%;
 }
 
 
@@ -59,7 +59,7 @@ header {
   }
 
 label {
-  padding:bottom: 10px;
+  padding-bottom: 10px;
 }
 
 footer{
@@ -106,6 +106,7 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
+  display: block;
   background-color: #e8eeef;
   color: #8a97a0;
   margin-bottom: 30px;
@@ -136,6 +137,8 @@ button {
 button:hover {
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
+    transition: background-color 2s;
+    cursor: pointer;
 }
 
 .first {
@@ -149,15 +152,49 @@ button:hover {
   .main{
     width: 50%;
     margin: auto;
-  }
-   header{
-     margin: auto;
-     text-align: center;
-     width: 50%;
-   }
-   input {
-   }
-   label {
-   }
+}
+header{
+   margin: auto;
+   text-align: center;
+   width: 50%;
+ }
 
+ .primary{
+    width: 30%;
+    display:inline-block;
+ }
+
+ #name,
+ #mail,
+ #phone,
+ #address,
+ #city,
+ #state,
+ #zip,
+ select {
+   text-align: right;
+   font-size: 16px;
+   height: auto;
+   margin: 0;
+   outline: 0;
+   padding: 15px;
+   width: 69%;
+   display:inline-block;
+   background-color: #e8eeef;
+   color: #8a97a0;
+   margin-bottom: 30px;
+   opacity: 0.5;
+ }
+
+
+.second{
+  margin-top: 10px;
+}
+ fieldset {
+   padding: 0px;
+   margin:0px;
+ }
+button{
+  margin-bottom: 10px;
+}
 }
