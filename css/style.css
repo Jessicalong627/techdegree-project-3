@@ -5,6 +5,7 @@
     outline: 0;
       background-color: #FFFF66;
       border: 1px solid darkblue;
+      transition:
   }
 .wrapper{
   margin: 0 auto;
@@ -127,6 +128,8 @@ select {
 #name:hover,
 #mail:hover {
  opacity: 1.0;
+ transition: background-color 2s;
+ cursor: pointer;
 }
 
 button {
