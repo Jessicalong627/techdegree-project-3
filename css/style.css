@@ -1,24 +1,28 @@
 * {
-  box-sizing: border-box;
-margin: 0 auto}
+  box-sizing: border-box;}
 
   input:focus, textarea:focus {
     outline: 0;
       background-color: #FFFF66;
       border: 1px solid darkblue;
   }
-
+.wrapper{
+  margin: 0 auto;
+}
 
 body {
-font-family: 'Raleway', sans-serif;
-margin: 0;
-}
-header{
-  padding: 30px;
-  width: 90%;
-  border-bottom: 5px solid black;
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+  }
 
+header {
+  border-bottom: 5px solid black;
+  border-bottom-style: ridge;
+  margin: auto;
+  text-align: center;
 }
+
 .top {
   background-color: #2d3945;
   padding: 5px;
@@ -28,15 +32,16 @@ header{
 }
 
 .main{
-  background-color: lightblue;
-  padding-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid black
 }
 
 .heading {
   text-align: center;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
+
 }
+
 
 .first{
   border-spacing: 10px;
@@ -46,11 +51,7 @@ header{
   width:90%;
 }
 
-h3{
-  text-align: right;
-  display: inline-block;
-  width: 100%;
-}
+
   fieldset {
     margin-bottom: 20px;
     border: none;
@@ -58,13 +59,14 @@ h3{
   }
 
 label {
-  margin-bottom: 8px;
+  padding:bottom: 10px;
 }
 
 footer{
   text-align: center;
-  color: grey;
+  color: white;
   padding: 10px;
+  background-color: #2d3945;
 }
 
 button {
@@ -136,15 +138,26 @@ button:hover {
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
+.first {
+  width: 100%;
+}
+
 /* Media Queries*/
 
 @media (min-width: 769px) {
 
-.main{
-  width: 50%;
-}
- header{
-   width: 50%;
- }
-.second{width:50%}
+  .main{
+    width: 50%;
+    margin: auto;
+  }
+   header{
+     margin: auto;
+     text-align: center;
+     width: 50%;
+   }
+   input {
+   }
+   label {
+   }
+
 }
